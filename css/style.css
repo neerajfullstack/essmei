@@ -106,8 +106,50 @@ a {
 
 .product {
   width: 33.333%;
+  position: relative;
 }
 
 .products {
   margin-bottom: 40px;
+}
+
+/*
+1. Hide the overlay
+2. Position the overlay
+3. Slightly transparent background
+4. position price title and price in top and bottom left
+*/
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(254, 234, 52, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  transition: all 0.4s;
+}
+
+.product:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.product h4,
+.product p {
+  font-weight: 700;
+}
+
+.product p {
+  font-size: 36px;
+}
+
+.product h4 {
+  font-size: 18px;
 }
