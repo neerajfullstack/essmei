@@ -47,20 +47,21 @@ a {
   text-decoration: none;
 }
 
-nav a {
+#main-nav a {
   display: block;
 }
 
-nav {
+#main-nav {
   display: flex;
 }
 
 .hero {
-  background-image: url(/assets/hero.jpg);
+  background-image: url(../assets/hero.jpg);
   background-size: cover;
   background-position: right top;
   padding-top: 110px;
   padding-bottom: 120px;
+  margin-bottom: 30px;
 }
 
 .intro {
@@ -76,4 +77,37 @@ nav {
 
 .hero p {
   font-size: 24px;
+}
+
+#filter-nav {
+  margin-bottom: 15px;
+}
+
+#filter-nav a {
+  color: #000;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.selected {
+  font-weight: bold;
+  padding-bottom: 1px;
+  border-bottom: 3px solid #feea34;
+}
+
+.products .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product img {
+  display: block;
+}
+
+.product {
+  width: 33.333%;
+}
+
+.products {
+  margin-bottom: 40px;
 }
