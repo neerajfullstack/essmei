@@ -133,7 +133,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   padding: 16px;
-  transition: all 0.4s;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .product:hover .overlay {
@@ -152,4 +152,21 @@ a {
 
 .product h4 {
   font-size: 18px;
+}
+/* ceaser some animation shit that you should checkout later */
+
+@media (max-width: 620px) {
+  .products .container {
+    flex-direction: column;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  #filter-nav a {
+    display: block;
+    width: max-content;
+    margin-bottom: 10px;
+  }
 }
