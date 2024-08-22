@@ -89,6 +89,15 @@ a {
   margin-right: 10px;
 }
 
+.hide-filter-btn {
+  color: #767675;
+  margin-bottom: 10px;
+  display: none;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .selected {
   font-weight: bold;
   padding-bottom: 1px;
@@ -155,18 +164,87 @@ a {
 }
 /* ceaser some animation shit that you should checkout later */
 
-@media (max-width: 620px) {
-  .products .container {
-    flex-direction: column;
+/* Tablet layout */
+
+@media screen and (max-width: 860px) {
+  .hero {
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+
+  .product {
+    width: 50%;
+  }
+
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .products {
+    margin-bottom: 60px;
+  }
+}
+
+/* Mobile Layout */
+
+@media screen and (max-width: 770px) {
+  .hero {
+    background-image: none;
+    background-color: #bfbfb7;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .hero .intro h2 {
+    font-size: 24px;
+  }
+
+  .hero .intro p {
+    font-size: 18px;
+  }
+
+  .intro {
+    width: 100%;
+  }
+
+  #filter-nav .container a {
+    display: block;
+    width: max-content;
+  }
+
+  .hide-filter-btn {
+    display: block;
+  }
+}
+/*   */
+
+@media (max-width: 540px) {
+  .hero .intro h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .hero .intro p {
+    font-size: 14px;
+  }
+
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
   }
 
   .product {
     width: 100%;
   }
+}
 
-  #filter-nav a {
-    display: block;
-    width: max-content;
-    margin-bottom: 10px;
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  .products {
+    margin-bottom: 20px;
   }
 }
