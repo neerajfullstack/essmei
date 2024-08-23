@@ -99,6 +99,7 @@ a {
 .filters .show-filters {
   color: #bfbfb7;
   margin-bottom: 8px;
+  display: none;
 }
 .products .container {
   display: flex;
@@ -234,6 +235,14 @@ a {
 
   .products {
     margin-bottom: 20px;
+  }
+
+  .filters .show-filters {
+    display: block;
+  }
+
+  .filters-list {
+    display: none;
   }
 
   .filters a {
